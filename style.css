@@ -1,0 +1,200 @@
+/* ESTILOS GERAIS */
+body {
+    background-color: #f0f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #3a5a5b;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* AUTOBIOGRAFIA */
+.bio {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+/* BOTÃO */
+#mensagemBtn {
+    background: linear-gradient(135deg, #6d597a 0%, #9d65c9 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(109, 89, 122, 0.3);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#mensagemBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(109, 89, 122, 0.4);
+    background: linear-gradient(135deg, #9d65c9 0%, #6d597a 100%);
+}
+
+/* MENSAGEM HÁVAMÁL */
+#mensagemContainer {
+    background: rgba(245, 240, 230, 0.95);
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    display: none;
+    font-family: 'Times New Roman', serif;
+    color: #3a2c10;
+    line-height: 1.8;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0d0c0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hava-line {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.hava-author {
+    margin-top: 25px;
+    font-weight: bold;
+    font-style: normal;
+    color: #6d597a;
+    font-size: 1.1em;
+}
+
+/* LISTA DE HOBBIES */
+.hobbies {
+    margin: 30px auto;
+    max-width: 80%;
+    padding-left: 20px;
+}
+
+.hobbies li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.hobbies li:before {
+    content: "•";
+    color: #9d65c9;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+/* IMAGEM */
+.hobby-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+}
+
+/* TABELA */
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6d597a;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* LINK */
+.site-link {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 1.1em;
+}
+
+.site-link a {
+    color: #6d597a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+}
+
+.site-link a:hover {
+    color: #9d65c9;
+    border-bottom: 2px solid #9d65c9;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    #mensagemContainer {
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    table {
+        width: 100%;
+    }
+}
